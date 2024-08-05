@@ -7,9 +7,9 @@ import GridIcon from "../assets/svg/grid.svg";
 import ListIcon from "../assets/svg/list.svg";
 import LinkIcon from "../assets/svg/link.svg";
 
-const Home: React.FC = () => {
+const Profile: React.FC = () => {
 
-    const { picPaths, dispatch } = useContext(SocialyContext); 
+    const { picPaths } = useContext(SocialyContext); 
 
     return (
         <main className="home">
@@ -44,9 +44,15 @@ const Home: React.FC = () => {
                 <a href="#">Socialy.com</a>
             </section>
             <section className="home-menu">
-                <img src={GridIcon} alt="GridIcon"  className="caret-down-icon"/>
-                <img src={ListIcon} alt="ListIcon"  className="caret-down-icon"/>
-                <img src={LinkIcon} alt="LinkIcon"  className="caret-down-icon"/>
+                <div>
+                    <img src={GridIcon} alt="GridIcon"  className="caret-down-icon"/>
+                </div>
+                <div>
+                    <img src={ListIcon} alt="ListIcon"  className="caret-down-icon"/>
+                </div>
+                <div>
+                    <img src={LinkIcon} alt="LinkIcon"  className="caret-down-icon"/>
+                </div>
             </section>
             <section className="user-images">
                 {
@@ -65,4 +71,4 @@ const Home: React.FC = () => {
     );
 }
 
-export default Home;
+export default Profile;

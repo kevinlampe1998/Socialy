@@ -19,12 +19,21 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
     border-bottom: 5px solid #eee;
     position: fixed;
     top: 0;
     width: 100%;
     background: #fff;
+}
+
+header a {
+    padding: 10px 3%;
+}
+
+header a:hover {
+    border-bottom: 5px solid #999;
+    margin-bottom: -5px;
 }
 
 main {
@@ -77,8 +86,16 @@ main {
     width: 80%;
 }
 
+.follow-bar h3:hover {
+    background: #07f;
+}
+
 .follow-bar div {
     width: 15%;
+}
+
+.follow-bar div:hover {
+    background: #07f;
 }
 
 .caret-down-icon {
@@ -113,8 +130,24 @@ main {
 .home-menu {
     display: flex;
     justify-content: space-around;
-    padding: 15px 0;
     border-bottom: 2px solid #eee;
+}
+
+.home-menu > * > * {
+    padding: 15px 0;
+}
+
+.home-menu div {
+    padding: 0 10%;
+}
+
+.home-menu > *:first-child {
+    height: 100%;
+}
+
+.home-menu > *:hover {
+    border-top: 5px solid #999;
+    margin-top: -5px;
 }
 
 /* ---- user images ------------------------------ */
@@ -127,8 +160,9 @@ main {
 }
 
 .user-images img {
-    height: 33vw;
-    width: 33vw;
+    height: 32vw;
+    width: 32vw;
+    object-fit: cover;
 }
 
 /* ---- bottom nav ------------------------------ */
@@ -139,8 +173,29 @@ nav {
     width: 100%;
     position: fixed;
     bottom: 0;
-    padding: 10px 10px;
     border-top: 5px solid #eee;
     background: #fff;
 }
 
+nav a {
+    padding: 10px 5%;
+}
+
+nav a:hover {
+    border-top: 5px solid #999;
+    margin-top: -5px;
+}
+
+/* ---- keyframes ------------------------------ */
+
+@media screen and (min-width: 1000px) {
+
+    /* .user-images {
+        gap: 1vw;
+    } */
+
+    .user-images img {
+        height: 24.25vw;
+        width: 24.25vw;
+    }
+}

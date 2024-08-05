@@ -1,7 +1,7 @@
 import { createContext, useEffect, useReducer } from "react";
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
-import Home from "./pages/Home.tsx";
+import Profile from "./pages/Profile.tsx";
 import AddFriend from "./pages/AddFriend.tsx";
 import Settings from "./pages/Settings.tsx";
 
@@ -27,29 +27,24 @@ const Layout: React.FC = () => {
         <Link to=""><img src={SearchIcon} alt="SearchIcon"  className="svg"/></Link>
         <Link to=""><img src={SquarePlusIcon} alt="SquarePlusIcon"  className="svg"/></Link>
         <Link to=""><img src={HeartIcon} alt="HeartIcon"  className="svg"/></Link>
-        <Link to=""><img src={UserIcon} alt="UserIcon"  className="svg"/></Link>
+        <Link to="/"><img src={UserIcon} alt="UserIcon"  className="svg"/></Link>
       </nav>
     </div>
   );
 };
 
-interface StaticDB {
-  picPaths: String[],
-  dispatch: any
-}
-
-export const SocialyContext = createContext<StaticDB | undefined>(undefined);
+export const SocialyContext = createContext();
 
 interface actionType {
-  type: String,
-  payload: any
+  type: string,
+  payload: string[]
 }
 
-const reducer = (state: string[], action: actionType) => {
+const reducer = (state: string[], action: actionType): string[] => {
 
   if (action.type === "init") {
     return action.payload;
-  };
+  }
 
   return state;
 };
@@ -84,7 +79,7 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Profile />} />
             <Route path="/add-friend" element={<AddFriend />} />
             <Route path="/settings" element={<Settings />} />
           </Route>
