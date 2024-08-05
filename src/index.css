@@ -12,21 +12,23 @@
     width: 30px;
 }
 
+.layout {
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-bottom: 5px solid #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    padding: 20px 10px;
-    border-top: 5px solid #eee;
+main {
+    margin-top: 65px;
 }
 
 /* ---- home ------------------------------ */
@@ -114,3 +116,31 @@ nav {
     padding: 15px 0;
     border-bottom: 2px solid #eee;
 }
+
+/* ---- user images ------------------------------ */
+
+.user-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    padding-bottom: 50px;
+}
+
+.user-images img {
+    height: 33vw;
+    width: 33vw;
+}
+
+/* ---- bottom nav ------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 10px;
+    border-top: 5px solid #eee;
+    background: #fff;
+}
+

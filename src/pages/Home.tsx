@@ -1,10 +1,16 @@
-import CameraIcon from "../assets/camera.svg";
-import CaretDownIcon from "../assets/caret-down.svg";
-import GridIcon from "../assets/grid.svg";
-import ListIcon from "../assets/list.svg";
-import LinkIcon from "../assets/link.svg";
+import { useContext } from "react";
+import { SocialyContext } from "../App";
+
+import CameraIcon from "../assets/svg/camera.svg";
+import CaretDownIcon from "../assets/svg/caret-down.svg";
+import GridIcon from "../assets/svg/grid.svg";
+import ListIcon from "../assets/svg/list.svg";
+import LinkIcon from "../assets/svg/link.svg";
 
 const Home: React.FC = () => {
+
+    const { picPaths, dispatch } = useContext(SocialyContext); 
+
     return (
         <main className="home">
             <section>
@@ -43,7 +49,17 @@ const Home: React.FC = () => {
                 <img src={LinkIcon} alt="LinkIcon"  className="caret-down-icon"/>
             </section>
             <section className="user-images">
+                {
 
+                    picPaths[0] ?
+
+                        picPaths.map((path: string, index: number) => (
+                            <img src={path} key={index} />
+                        ))
+
+                        : <h1>Error loading</h1>
+
+                }
             </section>
         </main>
     );
