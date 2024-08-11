@@ -33,7 +33,12 @@ const Layout: React.FC = () => {
   );
 };
 
-export const SocialyContext = createContext();
+interface SocialyContextType {
+  picPaths: string[];
+  dispatch: React.Dispatch<actionType>;
+}
+
+export const SocialyContext = createContext<SocialyContextType | undefined>(undefined);
 
 interface actionType {
   type: string,

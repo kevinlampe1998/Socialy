@@ -9,7 +9,13 @@ import LinkIcon from "../assets/svg/link.svg";
 
 const Profile: React.FC = () => {
 
-    const { picPaths } = useContext(SocialyContext); 
+    const context = useContext(SocialyContext);
+
+    if (!context) {
+        return <h1>Error on context</h1>;
+    }
+
+    const { picPaths } = context;
 
     return (
         <main className="home">
