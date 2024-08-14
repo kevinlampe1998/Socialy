@@ -25,7 +25,7 @@
 <br/>
 
 
-<img src="/src/assets/images/website-screenshot.png" width="50%"/>
+<img src="/src/assets/images/website-screenshot.png" width="50%" align="center"/>
 
 <br/>
 <br/>
