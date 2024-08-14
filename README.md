@@ -24,8 +24,9 @@
 <br/>
 <br/>
 
-
-<img src="/src/assets/images/website-screenshot.png" width="50%" align="center"/>
+<div style="text-align:center;">
+   <img src="/src/assets/images/website-screenshot.png" width="50%" />
+</div>
 
 <br/>
 <br/>
