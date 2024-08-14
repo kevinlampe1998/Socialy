@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+<h1 align="center">Socialy</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h4>Contact</h4>
+<br/>
+<ul>
+  <li>Name: Kevin Thomas Lampe</li>
+  <li>E-Mail: lampekevin@outlook.com</li>
+  <li>Main-Website: www.lampe-kevin.com</li>
+  <li>Linkedin: https://www.linkedin.com/in/kevin-lampe-7318b2319/</li>
+</ul>
 
-Currently, two official plugins are available:
+<br/>
+<br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h4>Description</h4>
+<br/>
+<ul>
+   <li>A Copy of Instagram</li>
+   <li>Link: www.socialy.lampe-kevin.com</li>
+</ul>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+<br/>
+<br/>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<img src="/src/assets/images/website-screenshot.png" width="100%"/>
+
+<br/>
+<br/>
+
+<h4>How to use it:</h4>
+<br/>
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+3. Run Application on Browser
+   ```sh
+   npm run dev
+   ```
